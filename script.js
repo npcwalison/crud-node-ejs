@@ -1,5 +1,5 @@
-const open = document.querySelector('.open-popup')
-const close = document.querySelector('.close-popup')
+const open = document.querySelector('#open-popup')
+const close = document.querySelector('#close-popup')
 const popup = document.querySelector('.popup-container')
 
 
@@ -9,4 +9,5 @@ open.addEventListener("click", ()=> {
 
 close.addEventListener("click", ()=> {
   popup.classList.remove('active')
+  popup.classList.add('saida-popup')
 })
