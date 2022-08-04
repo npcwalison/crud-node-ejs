@@ -1,0 +1,28 @@
+{
+  "name": "stapp",
+  "version": "1.0.0",
+  "description": "CRUD",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walisonls/stapp.git"
+  },
+  "keywords": [
+    "crud",
+    "formulario",
+    "tabela"
+  ],
+  "author": "Walison Lima",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/walisonls/stapp/issues"
+  },
+  "homepage": "https://github.com/walisonls/stapp#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.1"
+  }
+}
