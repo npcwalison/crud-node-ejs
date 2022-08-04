@@ -6,6 +6,9 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+button {
+  cursor: pointer;
+}
 .menu-container {
   width: 100vw;
   height: 55px;
@@ -91,6 +94,7 @@ tbody td:first-child {
   height: 300px;
   border: solid 14px rgb(185, 155, 91);
   box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+  background: #fff;
 
   position: fixed;
   top: calc(50% - 155px);
@@ -102,7 +106,7 @@ tbody td:first-child {
 }
 .popup-container.active {
   display: flex;
-  animation: vinheta 0.5s ease-in;
+  animation: vinheta 0.3s ease-in;
 }
 .popup-container #close-popup {
   position: absolute;
@@ -116,6 +120,42 @@ tbody td:first-child {
   font-weight: 700;
   border: 0;
 }
+#close-popup:hover {
+  background: #333;
+  transition: background 0.5s;
+}
+
+.popup-container form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  align-items: center;
+}
+.popup-container form input {
+  border: 0;
+  border-bottom: solid 2px #222;
+  padding: 5px 10px;
+  width: 400px;
+  margin-top: 30px;
+  outline-color: #ccc;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+.popup-container form button {
+  width: 100px;
+  height: 35px;
+  margin-top: 30px;
+  border: none;
+  font-size: 18px;
+  background: #222;
+  color: #fff;
+  letter-spacing: 0.5px;
+  transition: background 0.5s;
+}
+.popup-container form button:hover {
+  background: #333;
+}
 
 @keyframes vinheta {
   to {
@@ -123,14 +163,5 @@ tbody td:first-child {
   }
   from {
     top: 0;
-  }
-}
-
-@keyframes saida {
-  to {
-    top: 0;
-  }
-  from {
-    top: calc(50% - 155px);
   }
 }

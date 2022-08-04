@@ -9,5 +9,4 @@ open.addEventListener("click", ()=> {
 
 close.addEventListener("click", ()=> {
   popup.classList.remove('active')
-  popup.classList.add('saida-popup')
 })

@@ -15,18 +15,22 @@
   </nav><!--==>menu-container<==-->
   <div class="popup-container">
     <button id="close-popup">X</button>
+    <form action="/data" method="post">
+      <input type="text" placeholder="Nome completo">
+      <input type="text" placeholder="Maticula">
+      <button id="btnEnviar">Salvar</button>
+    </form>
   </div><!--==>popup-container<==-->
   <div class="table-container">
     <table>
       <thead>
         <tr class="table-title">
-          <th colspan="3">Controle de Acesso</th>
+          <th colspan="2">Controle de Acesso</th>
           <th colspan="2"><button id="open-popup">Adicionar</button></th>
         </tr>
         <tr class="table-info">
           <th width="300px">Nome</th>
           <th width="150px">Maticula</th>
-          <th width="100px">Acesso</th>
           <th width="80px">Editar</th>
           <th width="80px">Deletar</th>
         </tr>
@@ -35,7 +39,6 @@
         <tr>
           <td width="300px">January</td>
           <td width="150px">0039114150</td>
-          <td width="100px">Ouro</td>
           <td width="80px">Edit</td>
           <td width="80px">Delete</td>
         </tr>
